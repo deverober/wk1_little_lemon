@@ -1,0 +1,53 @@
+.highlights-section {
+    grid-area: 2 / 1 / 2 / 6;
+    display: grid;
+    grid-template-areas:
+        "highlights_header highlights_header highlights_button"
+        "highlights_card highlights_card highlights_card";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .1fr 4fr;
+    margin: -10rem 2rem 10rem 2rem;
+    justify-content: center;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.highlights-section h2 {
+    grid-area: highlights_header;
+}
+
+.highlights-section a {
+    grid-area: highlights_button;
+    text-align: right;
+    margin-right: 2rem;
+    display: block;
+    border-radius: 6px;
+    background-color: #f4ce14;
+    color: black;
+    text-align: center;
+    width: 60%;
+    justify-self: right;
+    padding: 12px 20px;
+    word-break: keep-all;
+    align-self: center;
+}
+
+@media (max-width: 50rem) {
+    .highlights-section {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "highlights_header"
+        "highlights_card"
+        "highlights_card"
+        "highlights_card"
+        "highlights_button";
+        align-content: center;
+    }
+
+    .highlights-section a {
+        justify-self: center;
+        align-self: center;
+        /* width: 50%; */
+        margin-right: 0;
+    }
+}

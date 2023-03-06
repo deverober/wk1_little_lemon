@@ -1,0 +1,38 @@
+footer {
+    background-color: #495E57;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2rem;
+}
+
+footer img {
+    height: 20rem;
+    margin: auto;
+}
+
+.footer-box {
+    margin-top: 1.5rem;
+}
+
+.footer-box p {
+    font-weight: 600;
+}
+
+.footer-box ul {
+    line-height: 2rem;
+}
+
+.footer-box ul li {
+    display: block;
+}
+
+footer a {
+    color: #333;
+}
+
+@media (max-width: 50rem) {
+    footer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}

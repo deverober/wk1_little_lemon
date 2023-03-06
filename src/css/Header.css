@@ -1,0 +1,31 @@
+header {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin: 1.5rem 0;
+}
+
+header > img {
+    height: 50px;
+    margin: auto 0;
+}
+
+nav {
+    margin: auto 0;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+nav a {
+    color: #495E57;
+}
+
+@media (max-width: 50rem) {
+    nav ul li:last-child {
+        margin-right: 2rem;
+    }
+}

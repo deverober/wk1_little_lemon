@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+h1 {
+    font-weight: 300;
+    font-family: "Markazi Text";
+    font-size: 6.4rem;
+}
+
+h2 {
+    font-weight: 300;
+    font-family: "Markazi Text";
+    font-size: 4rem;
+}
+
+p {
+    font-weight: 300;
+    font-family: "karla";
+    font-size: 1.6rem;
+}
+
+a {
+    font-weight: 600;
+    font-family: "karla";
+    font-size: 1.6rem;
+    word-break: keep-all;
+    text-decoration: none;
+}
+
+@media (max-width: 144rem) {
+    header {
+        padding: 0 29rem;
+    }
+
+    section {
+        padding: 10rem 29rem;
+    }
+
+    footer {
+        padding: 5rem 29rem;
+    }
+}
+
+@media (max-width: 80rem) {
+    header {
+        padding: 0 15rem;
+    }
+
+    section {
+        padding: 5rem 15rem;
+    }
+
+    footer {
+        padding: 5rem 15rem;
+    }
+}
+
+@media (max-width: 50rem) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    header {
+        padding: 0 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    footer {
+        padding: 2rem;
+    }
+}
